@@ -1,12 +1,6 @@
-enum PRIORITY {
-  LOW
-  NORMAL
-  HIGH
-}
-
-type Todo @model @auth(rules: [{allow: public}]) {
+type Family @model @auth(rules: [{allow: public}]) {
   id: ID!
-  name: String!
-  priority: PRIORITY!
-  completedOn: AWSDateTime
+  Name: String
+  Age: Int
+  Attribute: String
 }
