@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">tryAmplify</string>
-    <string name="button1">Post Data</string>
-    <string name="button2">Get Data</string>
-    <string name="amplify_app">Amplify App</string>
+    <string name="button0">Reset</string>
+    <string name="button1">Add</string>
+    <string name="button2">Get</string>
+    <string name="button3">Delete</string>
+    <string name="amplify_app">Amplify Family</string>
 </resources>

@@ -23,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button1"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="@id/scroller"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
@@ -35,11 +36,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button2"
+        android:textColor="@color/white"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="@id/scroller"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toEndOf="@+id/button1"
         app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button3"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/scroller"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/button0"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.073" />
 
     <ScrollView
@@ -58,6 +89,7 @@
         app:layout_constraintTop_toBottomOf="@+id/button2">
 
         <TableLayout
+            android:textColor="@color/black"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:stretchColumns="0,1,2"
@@ -118,19 +150,9 @@
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#000000">
-
-
-            </TableRow>
-
-            <TableRow
                 android:background="#000000"
                 android:layout_width="fill_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
                 >
@@ -138,9 +160,10 @@
                 <EditText
                     android:id="@+id/tblName1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text=""
+                    android:textColor="@color/black"
                     android:layout_margin="1dp"
                     android:layout_column="0"
                     android:background="#FFFFFF"
@@ -150,7 +173,7 @@
                 <EditText
                     android:id="@+id/tblAge1"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text=""
                     android:layout_margin="1dp"
@@ -162,7 +185,7 @@
                 <EditText
                     android:id="@+id/tblAtt1"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text=""
                     android:layout_margin="1dp"
@@ -172,95 +195,95 @@
             </TableRow>
 
 
+            <!--
+                        <TableRow
+                            android:background="#000000"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            >
 
-            <TableRow
-                android:background="#000000"
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                >
+                            <EditText
+                                android:id="@+id/tblName2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text=" "
+                                android:layout_margin="1dp"
+                                android:layout_column="0"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                />
 
-                <EditText
-                    android:id="@+id/tblName2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text=" "
-                    android:layout_margin="1dp"
-                    android:layout_column="0"
-                    android:background="#FFFFFF"
-                    android:gravity="center"
-                    />
+                            <EditText
+                                android:id="@+id/tblAge2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text=" "
+                                android:layout_margin="1dp"
+                                android:layout_column="1"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                />
 
-                <EditText
-                    android:id="@+id/tblAge2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text=" "
-                    android:layout_margin="1dp"
-                    android:layout_column="1"
-                    android:background="#FFFFFF"
-                    android:gravity="center"
-                    />
+                            <EditText
+                                android:id="@+id/tblAtt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text=" "
+                                android:layout_margin="1dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:layout_column="2" />
+                        </TableRow>
 
-                <EditText
-                    android:id="@+id/tblAtt2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text=" "
-                    android:layout_margin="1dp"
-                    android:background="#FFFFFF"
-                    android:gravity="center"
-                    android:layout_column="2" />
-            </TableRow>
+                        <TableRow
+                            android:background="#000000"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            >
 
-            <TableRow
-                android:background="#000000"
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                >
+                            <EditText
+                                android:id="@+id/tblName3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text=" "
+                                android:layout_margin="1dp"
+                                android:layout_column="0"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                />
+                            <EditText
+                                android:id="@+id/tblAge3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text=" "
+                                android:layout_margin="1dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:layout_column="1" />
 
-                <EditText
-                    android:id="@+id/tblName3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text=" "
-                    android:layout_margin="1dp"
-                    android:layout_column="0"
-                    android:background="#FFFFFF"
-                    android:gravity="center"
-                    />
-                <EditText
-                    android:id="@+id/tblAge3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text=" "
-                    android:layout_margin="1dp"
-                    android:background="#FFFFFF"
-                    android:gravity="center"
-                    android:layout_column="1" />
+                            <EditText
+                                android:id="@+id/tblAtt3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text=" "
+                                android:layout_margin="1dp"
+                                android:background="#FFFFFF"
+                                android:gravity="center"
+                                android:layout_column="2" />
+                        </TableRow>
+             -->
 
-                <EditText
-                    android:id="@+id/tblAtt3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text=" "
-                    android:layout_margin="1dp"
-                    android:background="#FFFFFF"
-                    android:gravity="center"
-                    android:layout_column="2" />
-            </TableRow>
+                    </TableLayout>
+                </ScrollView>
 
-
-        </TableLayout>
-    </ScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>

@@ -55,4 +55,6 @@ dependencies {
 
     // Support for Java 8 features
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.0.10'
+    // For Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:0.22.5"
 }
